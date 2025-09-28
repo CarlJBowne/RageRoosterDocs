@@ -1,0 +1,10 @@
+site_name: "Rage Rooster: Fowl Carnage"
+theme: readthedocs
+nav:
+  - Home: home.md
+  - Player: Player/root.md
+  - Gameplay Systems: Gameplay/root.md
+  - State Machine: StateMachine/root.md
+  - Room System: RoomSystem/root.md
+  - Save System: SaveSystem/root.md
+  - Other: other/root.md
