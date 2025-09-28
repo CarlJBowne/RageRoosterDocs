@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="docs\index.md" />
+    <None Include="docs\home.md" />
     <None Include="mkdocs.yml" />
   </ItemGroup>
   <ItemGroup>

@@ -2,9 +2,30 @@ site_name: "Rage Rooster: Fowl Carnage"
 theme: readthedocs
 nav:
   - Home: home.md
-  - Player: Player/root.md
-  - Gameplay Systems: Gameplay/root.md
-  - State Machine: StateMachine/root.md
-  - Room System: RoomSystem/root.md
-  - Save System: SaveSystem/root.md
-  - Other: other/root.md
+  
+  - Player: 
+      - Overview: Player/Overview.md
+  
+  - Gameplay Systems:
+    - Overview: GameplaySystems/Overview.md
+  
+  - State Machine:
+    - Overview: StateMachine/Overview.md
+
+  - Room System: 
+    - Overview: RoomSystem/Overview.md
+    - Assets:
+        - Room Asset: RoomSystem/RoomAsset.md
+        - Room Asset: RoomSystem/AreaAsset.md
+        - Area Registry: RoomSystem/AreaRegistry.md
+    - Objects:
+        - Room Root: RoomSystem/RoomRoot.md
+        - Area Root: RoomSystem/AreaRoot.md
+        - Room Entrance: RoomSystem/RoomEntrance.md
+        - Spawn Point: RoomSystem/SpawnPoint.md
+    - Room Manager: RoomSystem/RoomManager.md
+    - Destination: RoomSystem/Destination.md
+  
+  - Save System:
+    - Overview: SaveSystem/Overview.md
+  - Other:
