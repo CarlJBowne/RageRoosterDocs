@@ -41,9 +41,11 @@
     <Folder Include="docs\Gameplay\" />
     <Folder Include="docs\Other\" />
     <Folder Include="docs\Player\" />
-    <Folder Include="docs\RoomSystem\" />
     <Folder Include="docs\SaveSystem\" />
     <Folder Include="docs\StateMachine\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\RoomSystem\RoomAsset.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

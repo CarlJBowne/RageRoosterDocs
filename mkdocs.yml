@@ -2,16 +2,12 @@ site_name: "Rage Rooster: Fowl Carnage"
 theme: readthedocs
 nav:
   - Home: home.md
-  
   - Player: 
       - Overview: Player/Overview.md
-  
   - Gameplay Systems:
     - Overview: GameplaySystems/Overview.md
-  
   - State Machine:
     - Overview: StateMachine/Overview.md
-
   - Room System: 
     - Overview: RoomSystem/Overview.md
     - Assets:
@@ -25,7 +21,6 @@ nav:
         - Spawn Point: RoomSystem/SpawnPoint.md
     - Room Manager: RoomSystem/RoomManager.md
     - Destination: RoomSystem/Destination.md
-  
   - Save System:
     - Overview: SaveSystem/Overview.md
-  - Other:
+  - Other: null.md
