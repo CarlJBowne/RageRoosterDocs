@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+        Player - [Company Name]
+    </title>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Player"/>
+    <link rel="icon" type="image/svg+xml" href="http://CarlJBowne.github.io"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="http://CarlJBowne.github.io">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://CarlJBowne.github.io">    
+        
+    <meta property="og:image" content="http://CarlJBowne.github.io"/>
+    <meta property="og:url" content="http://CarlJBowne.github.io/RageRoosterDocs/documentation/player-systems/player/">
+    <meta property="og:title" content="Player - [Company Name]" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Player"/>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content=""/>
+    <meta name="twitter:title" content="Player - [Company Name]" />
+    <meta name="twitter:description" content="Player" />
+    <meta name="twitter:image" content="http://CarlJBowne.github.io"/>
+
+    <link rel="canonical" href="http://CarlJBowne.github.io/RageRoosterDocs/documentation/player-systems/player/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&subset=latin&display=swap"
+          rel="stylesheet"/>
+    
+    <link rel="preload" href="http://CarlJBowne.github.io/RageRoosterDocs/_lib/index.css" as="style">
+    <link rel="stylesheet" href="http://CarlJBowne.github.io/RageRoosterDocs/_lib/index.css"/>
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+        html {
+            scroll-padding-top: 120px;
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+    <script>
+        function getInitialTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'system';
+            if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        const theme = getInitialTheme();
+        document.documentElement.classList.add('theme-' + theme);
+    </script>
+    
+</head>
+<body>
+
+<div id="root">
+    <sl-drawer id="menu-drawer" label="Documentation" class="drawer__control" placement="top">
+        <div class="body__drawer">
+            <div class="items">
+                
+                    
+                        <sl-button 
+                            class="nav_button  current " 
+                            size="medium" 
+                            href="/RageRoosterDocs/"
+                        >
+                            Documentation
+                        </sl-button>
+                         
+                
+            </div>
+            <sl-divider class="divider__drawer"></sl-divider>
+            <nav class="tree">
+                <div class="scroll-panel">
+                    
+                        
+                            
+                            
+                            
+                                <sl-tree class="tree__with_lines" selection="leaf">
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="0M3qgg84Zul3OS44tjwQR" 
+                                            style="--indent-level: 0"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/">Home</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="cFv1Dnv3gb_sgkVMM6Y8-" 
+                                                style="--indent-level: 0"
+                                                class="folder"
+                                            >
+                                                <span>Player Systems</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="pz6kF3wEDO2C8dTKPCkwH" 
+                                            style="--indent-level: 1"
+                                             selected 
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/player-systems/player/">Player</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="bkm8JuShJQEq5cAM6YKUO" 
+                                                style="--indent-level: 0"
+                                                class="folder"
+                                            >
+                                                <span>Room System</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="d5ZKsifHsdvxUiWXsLPbn" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/overview/">Overview</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="vofQili30wkMXwq3onLrq" 
+                                                style="--indent-level: 1"
+                                                class="folder"
+                                            >
+                                                <span>Assets</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="oS7rn86CowLWnpFtMHGsv" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/assets/room/">RoomAsset</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="T8MrnCtCG9LeiRkDOqm-j" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/assets/areaasset/">AreaAsset</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="t8N4caGRyaSxIe26Enu6y" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/assets/arearegistry/">AreaRegistry</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="62cn0Q35Ele2yX2rAQ7Pw" 
+                                                style="--indent-level: 1"
+                                                class="folder"
+                                            >
+                                                <span>MonoBehaviors</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="-e-LrUWcSO6AJ8YWINWXF" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/objects/roomroot/">RoomRoot</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="9AaM90nXlkBbj9doy3XxS" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/objects/arearoot/">AreaRoot</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="vUxY3HOlhQLSpcNAt6lfr" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/objects/roomentrance/">RoomEntrance</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="sGoectZMpOK4-tb5VcNdT" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/objects/spawnpoint/">SpawnPoint</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="R_5RoXbOfILrpWmZiR8gJ" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/roommanager/">RoomManager</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="4fD2KgM7kcWKEdkyvb-In" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/destination/">Destination</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="YnVJ-F33VV9wNqotmyrki" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/destinationserial/">DestinationSerial</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="pct2773FcXsP_Vz6u5SCz" 
+                                                style="--indent-level: 0"
+                                                class="folder"
+                                            >
+                                                <span>Save System</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="u4oQRKN8gGsUp8XOVeVLB" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/overview/">Overview</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="fjGAkqqqW6XBkbwLLIXJi" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/savedata/">SaveData</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="lqTIyCATsChmUabzBll6N" 
+                                                style="--indent-level: 1"
+                                                class="folder"
+                                            >
+                                                <span>SaveData ></span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="2M9SXwaVomkUNAoOdgYfI" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/savedata_subs/savedplayerdata/">SavedPlayerData</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="VaQttXGL4kE219kZhGHfL" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/savedata_subs/savedcollectible/">SavedCollectible</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="BJLe-jKm5Bc-zV6_IX25a" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/savedata_subs/iostream/">IOStream</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="1LpOSaS_sbvutQ7eQ5Qfi" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/savedflagset/">SavedFlagSet</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="v_WutkkidJ7qycGE0mHBI" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/savedvalueregistry/">SavedValueRegistry</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="SAgKgDNCcxmercBhL0y7j" 
+                                            style="--indent-level: 0"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/terminology/">Terminology</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                            
+                                </sl-tree>
+                            
+                        
+                        
+                </div>
+            </nav>
+        </div>
+    </sl-drawer>
+
+    <div class="body__wrapper">
+        <div class="nav__container">
+            <nav>
+                <div class="border-box"></div>
+                <div class="logo">
+                    
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+</svg>
+
+                        </div>
+                    
+                    <div>
+                        
+                            <span class="line-clamp-1">[Company Name]</span>
+                        
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="container">
+                        
+                            
+                                <sl-button 
+                                    class="nav_button  current " 
+                                    size="medium" 
+                                    href="/RageRoosterDocs/"
+                                >
+                                    Documentation
+                                </sl-button>
+                                                    
+                        
+                    </div>
+                </div>
+                <div class="search">
+                    <div>
+                        <sl-button id="search-button" class="search_button">
+                            <sl-icon slot="prefix" name="search"></sl-icon>
+                            Search
+                            <div slot="suffix">
+                                <div class="button__prefix-wrapper">
+                                    <div class="button__prefix-container">
+                                        <sl-icon name="command"></sl-icon>
+                                        <span class="font-w-semibold">K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </sl-button>
+                    </div>
+                    <div>
+                        <sl-dropdown id="theme-selector" hoist>
+                            <sl-button slot="trigger" class="nav_button">
+                                <sl-icon id="theme-selector-icon" slot="prefix" name="sun"></sl-icon>
+                            </sl-button>
+                            <sl-menu id="theme-selector-menu">
+                                <sl-menu-item type="checkbox" value="light">Light</sl-menu-item>
+                                <sl-menu-item type="checkbox" value="dark">Dark</sl-menu-item>
+                                <sl-menu-item type="checkbox" value="system">System</sl-menu-item>
+                            </sl-menu>
+                        </sl-dropdown>
+                    </div>
+                    <div class="menu">
+                        <sl-button id="menu-open-trigger" class="nav_button" outline>
+                            <sl-icon slot="prefix" name="list"></sl-icon>
+                        </sl-button>
+                    </div>
+                </div>
+            </nav>    
+        </div>
+        <div class="content__container">
+            <aside class="tree">
+                <nav id="nav-tree" class="tree">
+                    
+                        
+                            
+                            
+                            
+                                <sl-tree class="tree__with_lines" selection="leaf">
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="0M3qgg84Zul3OS44tjwQR" 
+                                            style="--indent-level: 0"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/">Home</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="cFv1Dnv3gb_sgkVMM6Y8-" 
+                                                style="--indent-level: 0"
+                                                expanded
+                                                class="folder"
+                                            >
+                                                <span>Player Systems</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="pz6kF3wEDO2C8dTKPCkwH" 
+                                            style="--indent-level: 1"
+                                             selected 
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/player-systems/player/">Player</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="bkm8JuShJQEq5cAM6YKUO" 
+                                                style="--indent-level: 0"
+                                                expanded
+                                                class="folder"
+                                            >
+                                                <span>Room System</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="d5ZKsifHsdvxUiWXsLPbn" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/overview/">Overview</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="vofQili30wkMXwq3onLrq" 
+                                                style="--indent-level: 1"
+                                                expanded
+                                                class="folder"
+                                            >
+                                                <span>Assets</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="oS7rn86CowLWnpFtMHGsv" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/assets/room/">RoomAsset</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="T8MrnCtCG9LeiRkDOqm-j" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/assets/areaasset/">AreaAsset</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="t8N4caGRyaSxIe26Enu6y" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/assets/arearegistry/">AreaRegistry</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="62cn0Q35Ele2yX2rAQ7Pw" 
+                                                style="--indent-level: 1"
+                                                expanded
+                                                class="folder"
+                                            >
+                                                <span>MonoBehaviors</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="-e-LrUWcSO6AJ8YWINWXF" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/objects/roomroot/">RoomRoot</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="9AaM90nXlkBbj9doy3XxS" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/objects/arearoot/">AreaRoot</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="vUxY3HOlhQLSpcNAt6lfr" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/objects/roomentrance/">RoomEntrance</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="sGoectZMpOK4-tb5VcNdT" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/objects/spawnpoint/">SpawnPoint</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="R_5RoXbOfILrpWmZiR8gJ" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/roommanager/">RoomManager</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="4fD2KgM7kcWKEdkyvb-In" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/destination/">Destination</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="YnVJ-F33VV9wNqotmyrki" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/room-folder/destinationserial/">DestinationSerial</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="pct2773FcXsP_Vz6u5SCz" 
+                                                style="--indent-level: 0"
+                                                expanded
+                                                class="folder"
+                                            >
+                                                <span>Save System</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="u4oQRKN8gGsUp8XOVeVLB" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/overview/">Overview</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="fjGAkqqqW6XBkbwLLIXJi" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/savedata/">SaveData</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
+                                                id="lqTIyCATsChmUabzBll6N" 
+                                                style="--indent-level: 1"
+                                                
+                                                class="folder"
+                                            >
+                                                <span>SaveData ></span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="2M9SXwaVomkUNAoOdgYfI" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/savedata_subs/savedplayerdata/">SavedPlayerData</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="VaQttXGL4kE219kZhGHfL" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/savedata_subs/savedcollectible/">SavedCollectible</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="BJLe-jKm5Bc-zV6_IX25a" 
+                                            style="--indent-level: 2"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/savedata_subs/iostream/">IOStream</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="1LpOSaS_sbvutQ7eQ5Qfi" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/savedflagset/">SavedFlagSet</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="v_WutkkidJ7qycGE0mHBI" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/save-system/savedvalueregistry/">SavedValueRegistry</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="SAgKgDNCcxmercBhL0y7j" 
+                                            style="--indent-level: 0"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/RageRoosterDocs/documentation/terminology/">Terminology</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                            
+                                </sl-tree>
+                            
+                        
+                        
+                </nav>
+                <nav id="white-label-container" class="menu">
+                    <a class="white-label" href="https://tiledocs.com" target="_blank">
+                        <div class="card-container">
+                            <div class="icon-section">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="title-section">
+                                <sl-tooltip hoist style="--max-width: 30ch;" placement="top-start" content="This documentation site was created using TileDocs, a fast and user-friendly editor for building and hosting documentation projects.">
+                                    <span>Made with TileDocs</span>
+                                <sl-tooltip>
+                            </div>
+                        </div>
+                    </a>
+                </nav>
+            </aside>
+            
+            <article>
+                <main>
+                    <div class="content">
+                        <p><br></p><h1 id="player" dir="ltr"><span style="white-space: pre-wrap;">Player</span></h1><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">A global Singleton representing the Player entity in the game. Provides static access to commonly used components and systems related to the player.</em></i></blockquote><p dir="ltr"><span style="white-space: pre-wrap;">Base Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">MonoBehaviour</span></code></p><p dir="ltr"><span style="white-space: pre-wrap;">Nested Types: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Health</span></code><span style="white-space: pre-wrap;">, </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Ammo</span></code><span style="white-space: pre-wrap;">, </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Currency</span></code></p><h2 id="static-fields" dir="ltr"><span style="white-space: pre-wrap;">Static Fields</span></h2><h3 id="exists" dir="ltr"><span style="white-space: pre-wrap;">Exists</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">bool</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">Whether the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> entity has been loaded into the world. </em></i><br><i><em class="text-italic" style="white-space: pre-wrap;">(Not to be confused with </em></i><i><b><strong class="text-bold text-italic" style="white-space: pre-wrap;">Active</strong></b></i><i><em class="text-italic" style="white-space: pre-wrap;">, which denotes when the player's activity has been paused.)</em></i></blockquote><hr><h3 id="active" dir="ltr"><span style="white-space: pre-wrap;">Active</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">bool</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">Whether the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> entity is currently active and able to interact with the game world. </em></i><br><i><em class="text-italic" style="white-space: pre-wrap;">(Not to be confused with </em></i><i><b><strong class="text-bold text-italic" style="white-space: pre-wrap;">Exists</strong></b></i><i><em class="text-italic" style="white-space: pre-wrap;"> which is whether the Player entity has been loaded in the world.)</em></i></blockquote><hr><h3 id="gameobject" dir="ltr"><span style="white-space: pre-wrap;">GameObject</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">GameObject</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The Root </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">GameObject</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> of the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">.</em></i></blockquote><hr><h3 id="transform" dir="ltr"><span style="white-space: pre-wrap;">Transform</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Transform</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The Root </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Transform</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> of the Player.</em></i></blockquote><hr><h3 id="statemachine" dir="ltr"><span style="white-space: pre-wrap;">StateMachine</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">PlayerStateMachine</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">PlayerStateMachine</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> component attached to the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">. Handles the player's state transitions and logic.</em></i></blockquote><hr><h3 id="movementbody" dir="ltr"><span style="white-space: pre-wrap;">MovementBody</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">PlayerMovementBody</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">PlayerMovementBody</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> component attached to the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">. Handles movement and physics interactions.</em></i></blockquote><hr><h3 id="collider" dir="ltr"><span style="white-space: pre-wrap;">Collider</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">CapsuleCollider</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">CapsuleCollider</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> component attached to the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">.</em></i></blockquote><hr><h3 id="controller" dir="ltr"><span style="white-space: pre-wrap;">Controller</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">PlayerController</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">PlayerController</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> component attached to the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">. Handles player input and control.</em></i></blockquote><hr><h3 id="ranged" dir="ltr"><span style="white-space: pre-wrap;">Ranged</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">PlayerRanged</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">PlayerRanged</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> component attached to the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">. Handles ranged combat mechanics.</em></i></blockquote><hr><h3 id="interacter" dir="ltr"><span style="white-space: pre-wrap;">Interacter</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">PlayerInteracter</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">PlayerInteracter</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> component attached to the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">. Handles interact functionality.</em></i></blockquote><hr><h3 id="animator" dir="ltr"><span style="white-space: pre-wrap;">Animator</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Animator</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The Animator component attached to the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">.</em></i></blockquote><hr><h3 id="audio" dir="ltr"><span style="white-space: pre-wrap;">Audio</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">AudioCaller</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The AudioCaller component attached to the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">. Handles One-Time Sound emission from the Player.</em></i></blockquote><hr><h3 id="ragdollhandler" dir="ltr"><span style="white-space: pre-wrap;">RagdollHandler</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">RagdollHandler</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The RagdollHandler component attached to the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">.</em></i></blockquote><hr><h3 id="position" dir="ltr"><span style="white-space: pre-wrap;">Position</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Vector3</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The current world position of the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">. (At Feet.)</em></i></blockquote><hr><h3 id="center" dir="ltr"><span style="white-space: pre-wrap;">Center</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Vector3</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The current world position of the center of the Player's CapsuleCollider.</em></i></blockquote><hr><h3 id="rotation" dir="ltr"><span style="white-space: pre-wrap;">Rotation</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Quaternion</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The current Rotation of the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> as a Quaternion.</em></i></blockquote><hr><h3 id="forward" dir="ltr"><span style="white-space: pre-wrap;">Forward</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Vector3</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The current Forward Vector of the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">.</em></i></blockquote><hr><h3 id="eularangles" dir="ltr"><span style="white-space: pre-wrap;">EularAngles</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Vector3</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The current Rotation of the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> in Euler Angles.</em></i></blockquote><hr><h3 id="onrespawn" dir="ltr"><span style="white-space: pre-wrap;">onRespawn</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Action</span></code></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">A callback invoked when the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> respawns. (Possibly Obsolete?)</em></i></blockquote><hr><h2 id="static-methods" dir="ltr"><span style="white-space: pre-wrap;">Static Methods</span></h2><h3 id="distancefrom(vector3-pos)" dir="ltr"><span style="white-space: pre-wrap;">DistanceFrom(Vector3 pos)</span></h3><p dir="ltr"><b><strong class="text-bold" style="white-space: pre-wrap;">Returns:</strong></b><span style="white-space: pre-wrap;"> float </span></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">The distance between the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> and a given position, such as an enemy.</em></i></blockquote><ul><li value="1"><b><strong class="text-bold" style="white-space: pre-wrap;">Parameters</strong></b></li><li value="2"><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Vector3</span></code><span style="white-space: pre-wrap;"> : pos</span></li></ul><p dir="ltr"><span style="white-space: pre-wrap;"> </span><i><em class="text-italic" style="white-space: pre-wrap;">The position to be compared.</em></i></p><hr><h3 id="setactive(bool-active)" dir="ltr"><span style="white-space: pre-wrap;">SetActive(bool active)</span></h3><p dir="ltr"><b><strong class="text-bold" style="white-space: pre-wrap;">Returns:</strong></b><span style="white-space: pre-wrap;"> void</span></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">Sets the active state of the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">. </em></i><br><i><em class="text-italic" style="white-space: pre-wrap;">(Probably should be expanded later to allow a paused-but-still-visible state and whatnot)</em></i></blockquote><ul><li value="1"><b><strong class="text-bold" style="white-space: pre-wrap;">Parameters</strong></b></li><li value="2"><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">bool</span></code><span style="white-space: pre-wrap;"> : active</span><br><i><em class="text-italic" style="white-space: pre-wrap;">Whether to set the Player active or inactive.</em></i></li></ul><hr><h3 id="instantmove(vector3-newposition-float-yrot-null)" dir="ltr"><span style="white-space: pre-wrap;">InstantMove(Vector3 newPosition, float? yRot = null)</span></h3><p dir="ltr"><b><strong class="text-bold" style="white-space: pre-wrap;">Returns:</strong></b><span style="white-space: pre-wrap;"> void</span></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">Instantly moves the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;"> to a new position, optionally setting a new Y rotation.</em></i></blockquote><ul><li value="1"><b><strong class="text-bold" style="white-space: pre-wrap;">Parameters</strong></b></li><li value="2"><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Vector3</span></code><span style="white-space: pre-wrap;"> : newPosition </span><br><i><em class="text-italic" style="white-space: pre-wrap;">The target position.</em></i></li><li value="3"><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">float?</span></code><span style="white-space: pre-wrap;"> : yRot = null </span><br><i><em class="text-italic" style="white-space: pre-wrap;">An optional parameter for setting the Y rotation.</em></i></li></ul><hr><h3 id="death(bool)" dir="ltr"><span style="white-space: pre-wrap;">Death(bool)</span></h3><p dir="ltr"><b><strong class="text-bold" style="white-space: pre-wrap;">Returns:</strong></b><span style="white-space: pre-wrap;"> void</span></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">Begins the Player death sequence, also used for falling down pits which merely results in 1 lost health and a respawn.</em></i></blockquote><ul><li value="1"><b><strong class="text-bold" style="white-space: pre-wrap;">Parameters</strong></b></li><li value="2"><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">bool</span></code><span style="white-space: pre-wrap;"> : justPit = false</span><br><i><em class="text-italic" style="white-space: pre-wrap;">If it is just a pit.</em></i></li></ul><hr><h2 id="public-methods" dir="ltr"><span style="white-space: pre-wrap;">Public Methods</span></h2><h3 id="awake()" dir="ltr"><span style="white-space: pre-wrap;">Awake()</span></h3><p dir="ltr"><b><strong class="text-bold" style="white-space: pre-wrap;">Returns:</strong></b><span style="white-space: pre-wrap;"> void</span></p><blockquote dir="ltr"><i><em class="text-italic" style="white-space: pre-wrap;">Awake stage of the </em></i><i><code spellcheck="false" style="white-space: pre-wrap;"><em class="text-code text-italic">Player</em></code></i><i><em class="text-italic" style="white-space: pre-wrap;">, saving the static references and other setup.</em></i></blockquote><hr><h2 id="nested-types" dir="ltr"><span style="white-space: pre-wrap;">Nested Types</span></h2><h3 id="health" dir="ltr"><span style="white-space: pre-wrap;">Health</span></h3><blockquote dir="ltr"><span style="white-space: pre-wrap;">The Model part of the MVC pattern for Player Health, not to be confused with PlayerHealth or UIHUDSystem.</span></blockquote><h4 id="initialize()" dir="ltr"><span style="white-space: pre-wrap;">Initialize()</span></h4><hr><h4 id="current" dir="ltr"><span style="white-space: pre-wrap;">Current</span></h4><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">int</span></code></p><hr><h4 id="max" dir="ltr"><span style="white-space: pre-wrap;">Max</span></h4><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">int</span></code></p><hr><h4 id="updatehealth" dir="ltr"><span style="white-space: pre-wrap;">updateHealth</span></h4><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Action</span></code></p><hr><h5 id="updatemaxhealth" dir="ltr"><span style="white-space: pre-wrap;">updateMaxHealth</span></h5><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Action</span></code></p><hr><h3 id="ammo" dir="ltr"><span style="white-space: pre-wrap;">Ammo</span></h3><blockquote dir="ltr"><span style="white-space: pre-wrap;">The Model part of the MVC pattern for Player Ammo, not to be confused with PlayerRanged or UIHUDSystem.</span></blockquote><h4 id="initialize()" dir="ltr"><span style="white-space: pre-wrap;">Initialize()</span></h4><hr><h4 id="current" dir="ltr"><span style="white-space: pre-wrap;">Current</span></h4><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">int</span></code></p><hr><h4 id="max" dir="ltr"><span style="white-space: pre-wrap;">Max</span></h4><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">int</span></code></p><hr><h4 id="updateammo" dir="ltr"><span style="white-space: pre-wrap;">updateAmmo</span></h4><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Action</span></code></p><hr><h5 id="updatemaxammo" dir="ltr"><span style="white-space: pre-wrap;">updateMaxAmmo</span></h5><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Action</span></code></p><hr><h3 id="currency" dir="ltr"><span style="white-space: pre-wrap;">Currency</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">The Model part of the MV pattern for Player Ammo, not to be confused with UIHUDSystem.</span></p><h4 id="initialize()" dir="ltr"><span style="white-space: pre-wrap;">Initialize()</span></h4><hr><h4 id="current" dir="ltr"><span style="white-space: pre-wrap;">Current </span></h4><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">int</span></code></p><hr><h4 id="updatecurrency" dir="ltr"><span style="white-space: pre-wrap;">updateCurrency </span></h4><p dir="ltr"><span style="white-space: pre-wrap;">Type: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Action</span></code></p>
+                    </div>
+                </main>
+                <div class="footer">
+                    <div class="content">
+                        <div class="date">
+                            <div>Oct 13, 2025</div>
+                        </div>
+                        
+                            <a href="/RageRoosterDocs/" class="column left-column" title="Home">
+                                <div class="icon">
+                                    <sl-icon name="chevron-left"></sl-icon>
+                                </div>
+                                <div class="label">
+                                    <div class="title">PREVIOUS</div>
+                                    <div class="line-clamp-2">
+                                        Home
+                                    </div>
+                                </div>
+                            </a>
+                        
+                        
+                            <a href="/RageRoosterDocs/documentation/room-folder/overview/" class="column right-column" title="Overview">
+                                <div class="label">
+                                    <div class="title">NEXT</div>
+                                    <div class="line-clamp-2">
+                                        Overview
+                                    </div>
+                                </div>
+                                <div class="icon">
+                                    <sl-icon name="chevron-right"></sl-icon>
+                                </div>
+                            </a>
+                        
+                    </div>
+                </div>
+            </article>
+            <aside class="toc">
+                <nav class="toc">
+                    
+                    <div class="title">
+                        <sl-icon class="icon" name="list-nested"></sl-icon>
+                        <div>
+                            On this page
+                        </div>
+                    </div>
+                    <div id="toc-list" class="list">
+                        
+                            
+                                <div class="heading-2 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#static-fields">Static Fields</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#exists">Exists</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#active">Active</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#gameobject">GameObject</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#transform">Transform</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#statemachine">StateMachine</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#movementbody">MovementBody</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#collider">Collider</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#controller">Controller</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#ranged">Ranged</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#interacter">Interacter</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#animator">Animator</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#audio">Audio</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#ragdollhandler">RagdollHandler</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#position">Position</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#center">Center</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#rotation">Rotation</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#forward">Forward</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#eularangles">EularAngles</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#onrespawn">onRespawn</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-2 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#static-methods">Static Methods</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#distancefrom(vector3-pos)">DistanceFrom(Vector3 pos)</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#setactive(bool-active)">SetActive(bool active)</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#instantmove(vector3-newposition-float-yrot-null)">InstantMove(Vector3 newPosition, float? yRot = null)</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#death(bool)">Death(bool)</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-2 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#public-methods">Public Methods</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#awake()">Awake()</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-2 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#nested-types">Nested Types</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#health">Health</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#ammo">Ammo</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/RageRoosterDocs/documentation/player-systems/player/#currency">Currency</a>
+                                </div>
+                                
+                        
+                    </div>
+                    
+                </nav>
+            </aside>
+        </div>
+        <footer>
+            <div class="stack__column stack__gap-4 stack__center">
+                
+                <div class="stack__row stack__center">
+                    <span><span>Year &copy; Company Name</span></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<sl-dialog id="search-dialog" class="dialog_control dialog__search">
+    <div slot="label">
+        <p>Search</p>
+    </div>
+    <div class="pane stack__column stack__gap-4">
+        <div>
+            <sl-input
+                id="search-input"
+                type="text"
+                size="small"
+                autocomplete="off"
+                autofocus
+                clearable
+                placeholder="Type text you want to search..."
+            >
+            </sl-input>
+        </div>
+        <div id="search-result" class="stack__column stack__gap-4 search-result">
+        </div>
+        <div id="search-footer" class="footer"></div>
+    </div>
+</sl-dialog>
+<script type="module" src="http://CarlJBowne.github.io/RageRoosterDocs/_lib/index.js" data-shoelace="http://CarlJBowne.github.io/RageRoosterDocs/_lib"></script>
+<script type="module">
+    import {initPage, initTheme, initSearch, initToc} from 'http://CarlJBowne.github.io/RageRoosterDocs/_lib/init.js';
+    import {preInitTree} from 'http://CarlJBowne.github.io/RageRoosterDocs/_lib/pre.js';
+    preInitTree();
+    await initPage();
+    await initTheme('system');
+    await initSearch('http://CarlJBowne.github.io/RageRoosterDocs', '1761960780243');
+    document.documentElement.style.visibility = 'visible';
+    document.documentElement.style.opacity = '1';
+    initToc();
+</script>
+
+</body>
+</html>
