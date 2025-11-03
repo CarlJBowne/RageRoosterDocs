@@ -53,6 +53,8 @@
         document.documentElement.classList.add('theme-' + theme);
     </script>
     
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
 </head>
 <body>
 
@@ -1128,7 +1130,7 @@
     preInitTree();
     await initPage();
     await initTheme('system');
-    await initSearch('https://CarlJBowne.github.io/RageRoosterDocs', '1762128691920');
+    await initSearch('https://CarlJBowne.github.io/RageRoosterDocs', '1762129136992');
     document.documentElement.style.visibility = 'visible';
     document.documentElement.style.opacity = '1';
     initToc();
