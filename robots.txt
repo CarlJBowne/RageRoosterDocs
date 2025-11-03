@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://CarlJBowne.github.io/RageRoosterDocs/sitemap_index.xml
+Sitemap: https://CarlJBowne.github.io/RageRoosterDocs/sitemap_index.xml
