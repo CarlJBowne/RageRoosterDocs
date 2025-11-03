@@ -81,6 +81,6 @@
     },
     "/RageRoosterDocs/documentation/terminology/": {
         "title": "Terminology",
-        "text": "Terminology This page will be used to collect commonly used terminology. Spaces These refer to different spaces that a piece of Data can possibly be defined. \"Asset-Space\" ScriptableObject s defined in the project's assets folder. \"Scene-Space\" MonoBehaviour  scripts defined in a Scene on a GameObject. \"Static-Space\" Global access space accessible from anywhere so long as permissions allow. \"C#-Space\" Data objects created manually at runtime that live in memory and nowhere else."
+        "text": "Terminology This page will be used to collect commonly used terminology. Spaces These refer to different spaces that a piece of Data can possibly be defined. \"Asset-Space\" ScriptableObject s defined in the project's assets folder. \"Scene-Space\" MonoBehaviour  scripts defined in a Scene on a GameObject. \"Static-Space\" Global access space accessible from anywhere so long as permissions allow. \"C#-Space\" Data objects created manually at runtime that live in memory and nowhere else. Generally has to be referenced by something or will be collected by the Garbage Collector."
     }
 }
