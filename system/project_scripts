@@ -1,1 +1,1 @@
-{"headScript":"","bodyScript":"","footerScript":"<span>Year &copy; Company Name</span>"}
+{"headScript":"<meta http-equiv=\"Content-Security-Policy\" content=\"upgrade-insecure-requests\">","bodyScript":"","footerScript":"<span>Year &copy; Company Name</span>"}
